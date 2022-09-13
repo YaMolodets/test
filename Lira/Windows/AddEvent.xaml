@@ -21,14 +21,14 @@
         </Grid.ColumnDefinitions>
         <TextBlock Text="Вид культурного заведения"/>
         <TextBlock Text="Вид мероприятия" Grid.Row="1"/>
-        <TextBlock Text="Дата и время" Grid.Row="2"/>
+        <TextBlock Text="Дата" Grid.Row="2"/>
         <TextBlock Text="Кол-во билетов" Grid.Row="3"/>
         <TextBlock Text="Цена билета" Grid.Row="4"/>
-        <TextBox Grid.Column="1"/>
-        <TextBox Grid.Row="1" Grid.Column="1"/>
-        <TextBox Grid.Row="2" Grid.Column="1"/>
-        <TextBox Grid.Row="3" Grid.Column="1"/>
-        <TextBox Grid.Row="4" Grid.Column="1"/>
-        <Button Grid.Row="5" Grid.ColumnSpan="2" Content="Добавить мероприятие"/>
+        <TextBox x:Name="institutionEv" Grid.Column="1"/>
+        <TextBox x:Name="typeEv" Grid.Row="1" Grid.Column="1"/>
+        <DatePicker x:Name="dateEv" Grid.Row="2" Grid.Column="1"/>
+        <TextBox x:Name="countTickEv" Grid.Row="3" Grid.Column="1"/>
+        <TextBox x:Name="priceTickEv" Grid.Row="4" Grid.Column="1"/>
+        <Button Grid.Row="5" Grid.ColumnSpan="2" Content="Добавить мероприятие" Click="Button_Click"/>
     </Grid>
 </Window>

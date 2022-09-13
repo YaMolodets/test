@@ -23,5 +23,20 @@ namespace Lira.Windows
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                Event @event = new Event();
+                @event.TypeOfInstitution = institutionEv.Text;
+                @event.TypeOfIvent = typeEv.Text;
+                @event.TimeEvent = DateTime.Parse(dateEv.Text);
+                @event.CountTicket = int.Parse(countTickEv.Text);
+                @event.PriceTicket = int.Parse(priceTickEv.Text);
+                MainWindow.events.Add(@event);
+            }
+            catch { }
+        }
     }
 }
