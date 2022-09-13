@@ -5,11 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Lira"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" ResizeMode="NoResize">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition/>
-            <RowDefinition/>
+            <RowDefinition Height="380"/>
+            <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
+        <Button Grid.Row="1" Content="Добавить мероприятие" Click="Button_Click"/>
     </Grid>
 </Window>
