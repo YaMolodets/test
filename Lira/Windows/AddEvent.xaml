@@ -7,6 +7,28 @@
         mc:Ignorable="d"
         Title="AddEvent" Height="450" Width="800">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Text="Вид культурного заведения"/>
+        <TextBlock Text="Вид мероприятия" Grid.Row="1"/>
+        <TextBlock Text="Дата и время" Grid.Row="2"/>
+        <TextBlock Text="Кол-во билетов" Grid.Row="3"/>
+        <TextBlock Text="Цена билета" Grid.Row="4"/>
+        <TextBox Grid.Column="1"/>
+        <TextBox Grid.Row="1" Grid.Column="1"/>
+        <TextBox Grid.Row="2" Grid.Column="1"/>
+        <TextBox Grid.Row="3" Grid.Column="1"/>
+        <TextBox Grid.Row="4" Grid.Column="1"/>
+        <Button Grid.Row="5" Grid.ColumnSpan="2" Content="Добавить мероприятие"/>
     </Grid>
 </Window>
