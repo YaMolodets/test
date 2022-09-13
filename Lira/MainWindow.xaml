@@ -11,6 +11,15 @@
             <RowDefinition Height="380"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
+        <DataGrid AutoGenerateColumns="False" CanUserAddRows="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Тип заведения"/>
+                <DataGridTextColumn Header="Тип мероприятия"/>
+                <DataGridTextColumn Header="Дата"/>
+                <DataGridTextColumn Header="Кол-во билетов"/>
+                <DataGridTextColumn Header="Цена билета"/>
+            </DataGrid.Columns>
+        </DataGrid>
         <Button Grid.Row="1" Content="Добавить мероприятие" Click="Button_Click"/>
     </Grid>
 </Window>
