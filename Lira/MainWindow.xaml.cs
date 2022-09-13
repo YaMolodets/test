@@ -28,7 +28,8 @@ namespace Lira
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            
+            Windows.AddEventWindow wind = new Windows.AddEventWindow();
+            wind.Activate();
         }
     }
 }
