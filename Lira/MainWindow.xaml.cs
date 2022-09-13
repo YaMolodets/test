@@ -24,12 +24,15 @@ namespace Lira
         public MainWindow()
         {
             InitializeComponent();
+            dataGrid.ItemsSource = events;
+            dataGrid.UpdateLayout();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             Windows.AddEventWindow wind = new Windows.AddEventWindow();
-            wind.Activate();
+            wind.Show();
+            this.Close();
         }
     }
 }

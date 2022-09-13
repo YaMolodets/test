@@ -35,6 +35,9 @@ namespace Lira.Windows
                 @event.CountTicket = int.Parse(countTickEv.Text);
                 @event.PriceTicket = int.Parse(priceTickEv.Text);
                 MainWindow.events.Add(@event);
+                MainWindow mW = new MainWindow();
+                mW.Show();
+                this.Close();
             }
             catch { }
         }
