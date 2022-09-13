@@ -17,9 +17,9 @@ namespace Lira.Windows
     /// <summary>
     /// Interaction logic for AddEvent.xaml
     /// </summary>
-    public partial class AddEvent : Window
+    public partial class AddEventWindow : Window
     {
-        public AddEvent()
+        public AddEventWindow()
         {
             InitializeComponent();
         }
